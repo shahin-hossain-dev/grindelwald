@@ -1,0 +1,67 @@
+/* common styles */
+@font-face {
+    font-family: 'Switzer-Regular';
+    src: url('../assets/font/Switzer_Complete/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+/* navbar styles */
+nav{
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0px 81px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding-left: 41px;
+    font-size: 18px;
+    font-family: 'Switzer-Regular';
+}
+
+/* banner styles */
+.banner{
+    background: #1b3932;
+    height: 100vh;
+    width: 100%; 
+}
+.line {
+    background-image:url('../assets/images/line.png');  
+    
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    background-size:60%;
+    
+  } 
+
+.banner::after{ 
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat:repeat;
+ opacity: 0.1;
+    background-image: url('https://s3-alpha-sig.figma.com/img/3770/bcca/7acad560ca6be6d4b5c8ab196086e77f?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qf3D305gZWh7JDmWiPETW7rqke8~siEEEeA2Rh9ls6jM0M-fln49kc6Lp0qjH~J4WoQt8f80DeBILhuzKERfCN7p6bJJqBlqg~prj-qeeZqmJU3jLsuX6o6jvGPVBfRIM6kx6yZpR0Lb~VP1Ho-4yVXgbGsPnwhUlpzCmzOa144AjT~fsLCjwstpy11U92ZC7ZoZZ5r4eFvqAWDknTVcb9Iw7eQwmcGdARdhLUF7kMQoy417A2X~8Y7RLc7DhQQhQxlinIsUchfmyTK1e5YFR9ZhiwrceCh7KL4RYw7vs03Q8HkoJiTwWyFhit8S2rBy8ln8ZyJIWsSvaZyS3eJ55A__');
+    
+}
+
+  
